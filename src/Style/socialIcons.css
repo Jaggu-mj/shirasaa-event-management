@@ -1,0 +1,72 @@
+/* Container for Social Media Icons */
+.social-icons-container {
+    position: fixed; /* Fixed to the viewport */
+    top: 50%; /* Vertically centered */
+    right: 20px; /* Slightly offset from the right edge */
+    transform: translateY(-50%); /* Center the icons vertically */
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 15px; /* Spacing between icons */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+  }
+  
+  /* Individual Icon Wrapper */
+  .icon-wrapper {
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Icon Styling */
+ 
+.social-icon {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: #2c3e50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+  .social-icons {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .social-icon:hover {
+    background-color: #f39c12; /* Highlight on hover */
+    color: #fff;
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Hover Text for IDs */
+  .hover-text {
+    position: absolute;
+    top: 50%;
+    left: -150px; /* Display to the left of the icons */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+  }
+  
+  /* Show Hover Text on Icon Hover */
+  .icon-wrapper:hover .hover-text {
+    opacity: 1;
+    visibility: visible;
+    left: -170px; /* Slide in effect */
+  }
+  

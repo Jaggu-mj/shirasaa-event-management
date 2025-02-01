@@ -1,0 +1,27 @@
+/* Floating WhatsApp Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    width: 60px; /* Icon size */
+    height: 60px; /* Icon size */
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000; /* Ensure it appears on top of other elements */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .whatsapp-icon img {
+    width: 70%; /* Adjust image size inside the circle */
+    height: 70%;
+  }
+  
+  .whatsapp-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  }
+  

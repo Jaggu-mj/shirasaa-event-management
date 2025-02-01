@@ -1,0 +1,38 @@
+/* Circle Container */
+#circle {
+    position: fixed;
+    width:50px;
+    height: 50px;
+    border: 2px solid rgba(248, 249, 244, 0.5);
+    border-radius: 50%;
+    pointer-events: none; /* Let clicks pass through */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.2s ease; /* Smooth trailing effect for the circle */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+  }
+  
+  /* Ball Inside the Circle */
+  #ball {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 255, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.4s ease; /* Slower trailing effect for the ball */
+      box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+
+  }
+  
+  /* Decorative Effects (Optional) */
+  #circle {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #ball {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+  }
+  

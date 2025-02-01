@@ -1,0 +1,60 @@
+
+
+  .overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .overlay p {
+    font-size: 20px;
+    margin: 0;
+  }
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+  }
+
+
+  
+  
+  
+  /* Global styles - home.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+  /* Example: Adjust the VideoSection layout for mobile */
+  .video-container {
+    display: block; /* Stack the videos vertically */
+    width: 100%;
+  }
+
+  .card-section {
+    padding: 10px;
+  }
+
+  /* Footer adjustments for mobile */
+  footer {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* Larger screens (tablets or desktop) */
+@media (min-width: 769px) {
+  .video-container {
+    display: flex; /* Align video sections side by side */
+    justify-content: space-between;
+  }
+
+  .card-section {
+    padding: 20px;
+  }
+}
